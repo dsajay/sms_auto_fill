@@ -81,12 +81,16 @@ class SmsAutoFillPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, Activi
                         Toast.makeText(context, " listening started",Toast.LENGTH_SHORT).show()
                         activity?.startActivityForResult(consentIntent, REQUEST_CODE)
                     } catch (e: ActivityNotFoundException) {
-                        pendingResult?.success("Erorr")
+                        pendingResult?.success("ActivityNotFoundException ${e.message!!}")
                     }
                 }
 
-                CommonStatusCodes.TIMEOUT -> {}
-                else ->{}
+                CommonStatusCodes.TIMEOUT -> {
+                    pendingResult?.success("TIMEOUT")
+                }
+                else ->{
+                    pendingResult?.success("ELSE CASE")
+                }
                  }
 
 
