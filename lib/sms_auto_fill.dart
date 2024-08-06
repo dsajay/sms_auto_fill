@@ -1,4 +1,3 @@
-
 import 'sms_auto_fill_platform_interface.dart';
 
 class SmsAutoFill {
@@ -9,6 +8,7 @@ class SmsAutoFill {
   Future<String?> registerReceiver() {
     return SmsAutoFillPlatform.instance.registerReceiver();
   }
+
   Future<String?> unRegisterReceiver() {
     return SmsAutoFillPlatform.instance.registerReceiver();
   }

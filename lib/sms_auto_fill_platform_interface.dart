@@ -30,6 +30,7 @@ abstract class SmsAutoFillPlatform extends PlatformInterface {
   Future<String?> registerReceiver() {
     throw UnimplementedError('registerReceiver() has not been implemented.');
   }
+
   Future<String?> unRegisterReceiver() {
     throw UnimplementedError('unRegisterReceiver() has not been implemented.');
   }

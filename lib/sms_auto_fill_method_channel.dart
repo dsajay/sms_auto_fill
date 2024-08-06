@@ -11,18 +11,22 @@ class MethodChannelSmsAutoFill extends SmsAutoFillPlatform {
 
   @override
   Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+    final version =
+        await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
 
   @override
-  Future<String?> registerReceiver() async{
-    final service = await methodChannel.invokeMethod<String>('registerReceiver');
+  Future<String?> registerReceiver() async {
+    final service =
+        await methodChannel.invokeMethod<String>('registerReceiver');
     return service;
   }
+
   @override
-  Future<String?> unRegisterReceiver() async{
-    final service = await methodChannel.invokeMethod<String>('unRegisterReceiver');
+  Future<String?> unRegisterReceiver() async {
+    final service =
+        await methodChannel.invokeMethod<String>('unRegisterReceiver');
     return service;
   }
 }

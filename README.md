@@ -10,11 +10,11 @@ A Flutter plugin for automatically reading SMS OTP using Google's SMS Retriever 
 
 ## Installation
 
-Add `sms_auto_fill` to your `pubspec.yaml`:
+Add `sms_read_form_retriever_api` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
   flutter:
     sdk: flutter
-  sms_auto_fill:
+  sms_read_form_retriever_api:
     path: ../path_to_your_plugin

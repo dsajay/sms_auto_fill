@@ -50,13 +50,21 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Center(child: Text('Running on: $_otpReceiver\n'),),
-            Center(child: TextButton(style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              backgroundColor: MaterialStateProperty.all(Colors.cyan)
+            Center(
+              child: Text('Running on: $_otpReceiver\n'),
             ),
-              onPressed: () {startServiceForGetOtp(); },
-              child: const Text('Start Service'),),),
+            Center(
+              child: TextButton(
+                style: ButtonStyle(
+                    foregroundColor:
+                        MaterialStateProperty.all<Color>(Colors.white),
+                    backgroundColor: MaterialStateProperty.all(Colors.cyan)),
+                onPressed: () {
+                  startServiceForGetOtp();
+                },
+                child: const Text('Start Service'),
+              ),
+            ),
           ],
         ),
       ),
