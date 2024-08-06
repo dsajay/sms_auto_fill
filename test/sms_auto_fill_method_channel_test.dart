@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sms_auto_fill/sms_auto_fill_method_channel.dart';
+import 'package:sms_read_form_retriever_api/sms_auto_fill_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

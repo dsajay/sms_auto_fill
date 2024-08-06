@@ -9,8 +9,9 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:sms_read_form_retriever_api/sms_auto_fill.dart';
 
-import 'package:sms_auto_fill/sms_auto_fill.dart';
+
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();

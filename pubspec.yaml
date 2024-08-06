@@ -1,7 +1,10 @@
-name: sms_auto_fill
-description: "Sms auto fill plugin without permission."
+name: sms_read_form_retriever_api
+description: A Flutter plugin for automatically reading SMS OTP using Google's SMS Retriever API, without requiring SMS permissions.
 version: 0.0.1
-homepage:
+homepage: https://github.com/dsajay/sms_auto_fill.git
+repository: https://github.com/dsajay/sms_auto_fill.git
+
+
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
@@ -35,7 +38,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.sms_auto_fill
+        package: com.app.sms_read_form_retriever_api
         pluginClass: SmsAutoFillPlugin
 
   # To add assets to your plugin package, add an assets section, like this:

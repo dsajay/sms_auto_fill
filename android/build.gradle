@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'com.example.sms_auto_fill'
+        namespace 'com.app.sms_read_form_retriever_api'
     }
 
     compileSdk 34

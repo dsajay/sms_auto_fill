@@ -1,1 +1,13 @@
-TODO: Add your license here.
+
+Guideline 2.1 - Information Needed
+
+We have started your app's review, but we were unable to successfully access all or part of your app. In order for us to continue the review, we need to have a way to verify all app features and functionality. Typically this is done by providing a demo account that has access to all features and functionality in your app.
+
+
+Please ensure demo account has verifided bank account so we can review Comment section.
+
+
+Next Steps
+
+
+To resolve this issue, provide a user name and password in the App Review Information section of App Store Connect. It is also acceptable to include a demonstration mode that exhibits your app’s full features and functionality. Note that providing a demo video showing your app in use is not sufficient for us to continue the review.

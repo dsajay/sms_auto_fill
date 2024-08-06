@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:sms_auto_fill/sms_auto_fill.dart';
+import 'package:sms_read_form_retriever_api/sms_auto_fill.dart';
 
 void main() {
   runApp(const MyApp());
