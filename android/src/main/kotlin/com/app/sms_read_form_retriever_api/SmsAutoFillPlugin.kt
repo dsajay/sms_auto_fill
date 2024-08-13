@@ -13,6 +13,8 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 
+import android.os.Build
+
 import android.app.Activity
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
@@ -39,7 +41,14 @@ class SmsAutoFillPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, Activi
           activity?.let{it->
 
               val intentFilter = IntentFilter(SmsRetriever.SMS_RETRIEVED_ACTION)
-              context.registerReceiver(smsVerificationReceiver, intentFilter)
+              if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                  // Android 12 and above
+                  context.registerReceiver(smsVerificationReceiver, intentFilter,Context.RECEIVER_EXPORTED)
+              } else {
+                  // Android 11 and below
+                  context.registerReceiver(smsVerificationReceiver, intentFilter)
+              }
+
               SmsRetriever.getClient(it).startSmsUserConsent(null)
 
           }
