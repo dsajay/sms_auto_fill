@@ -6,3 +6,6 @@
 
 ## 0.0.3
 * Added RECEIVER_EXPORTED.
+
+## 0.0.4
+* Remove toast message

@@ -1,6 +1,6 @@
 name: sms_read_form_retriever_api
 description: A Flutter plugin for automatically reading SMS OTP using Google's SMS Retriever API, without requiring SMS permissions.
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/dsajay/sms_auto_fill.git
 repository: https://github.com/dsajay/sms_auto_fill.git
 
