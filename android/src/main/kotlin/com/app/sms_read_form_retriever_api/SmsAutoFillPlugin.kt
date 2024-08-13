@@ -87,7 +87,7 @@ class SmsAutoFillPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, Activi
                     // Get consent intent
                     val consentIntent = extras.getParcelable<Intent>(SmsRetriever.EXTRA_CONSENT_INTENT)
                     try {
-                        Toast.makeText(context, " listening started",Toast.LENGTH_SHORT).show()
+                        //Toast.makeText(context, " listening started",Toast.LENGTH_SHORT).show()
                         activity?.startActivityForResult(consentIntent, REQUEST_CODE)
                     } catch (e: ActivityNotFoundException) {
                         pendingResult?.success("ActivityNotFoundException ${e.message!!}")
